@@ -1,0 +1,57 @@
+{
+  "metrics": [
+    {
+      "value": 372,
+      "stat_type": "object",
+      "feature": "sum",
+      "name": "false_neg"
+    },
+    {
+      "value": 490,
+      "stat_type": "object",
+      "feature": "sum",
+      "name": "false_pos"
+    },
+    {
+      "value": 734,
+      "stat_type": "object",
+      "feature": "sum",
+      "name": "merge"
+    },
+    {
+      "value": 9704,
+      "stat_type": "object",
+      "feature": "sum",
+      "name": "n_pred"
+    },
+    {
+      "value": 10338,
+      "stat_type": "object",
+      "feature": "sum",
+      "name": "n_true"
+    },
+    {
+      "value": 0.8354501478528648,
+      "stat_type": "object",
+      "feature": "mean",
+      "name": "seg"
+    },
+    {
+      "value": 2,
+      "stat_type": "object",
+      "feature": "sum",
+      "name": "split"
+    },
+    {
+      "value": 8270,
+      "stat_type": "object",
+      "feature": "sum",
+      "name": "true_pos"
+    }
+  ],
+  "metadata": {
+    "notes": "",
+    "date": "2019-04-05",
+    "model_name": "fgbg"
+  }
+}
