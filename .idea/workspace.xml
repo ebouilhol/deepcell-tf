@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="164e6e46-bda0-4439-950e-b8d9defa4f96" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deepcell/model_zoo/homeApplications.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepcell/homeapplications/resnet50_3D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deepcell/model_zoo/maskrcnn_3D.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepcell/model_zoo/maskrcnn_3D.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deepcell/utils/misc_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepcell/utils/misc_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mrcnn_retinanet/.ipynb_checkpoints/MaskRCNN_3D-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mrcnn_retinanet/.ipynb_checkpoints/MaskRCNN_3D-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN_3D.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN_3D.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,7 @@
         <entry file="file://$PROJECT_DIR$/deepcell/utils/misc_utils.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
-              <caret line="95" column="76" lean-forward="true" selection-start-line="95" selection-start-column="76" selection-end-line="95" selection-end-column="76" />
+              <caret line="99" column="76" lean-forward="true" selection-start-line="99" selection-start-column="76" selection-end-line="99" selection-end-column="76" />
               <folding>
                 <element signature="e#1289#1327#0" expanded="true" />
               </folding>
@@ -227,12 +226,6 @@
               <item name="deepcell-tf" type="b2602c69:ProjectViewProjectNode" />
               <item name="deepcell-tf" type="462c0819:PsiDirectoryNode" />
               <item name="deepcell" type="462c0819:PsiDirectoryNode" />
-              <item name="homeapplications" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="deepcell-tf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="deepcell-tf" type="462c0819:PsiDirectoryNode" />
-              <item name="deepcell" type="462c0819:PsiDirectoryNode" />
               <item name="model_zoo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -406,7 +399,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20242488" />
@@ -844,7 +837,7 @@
     <entry file="file://$PROJECT_DIR$/deepcell/utils/misc_utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
-          <caret line="95" column="76" lean-forward="true" selection-start-line="95" selection-start-column="76" selection-end-line="95" selection-end-column="76" />
+          <caret line="99" column="76" lean-forward="true" selection-start-line="99" selection-start-column="76" selection-end-line="99" selection-end-column="76" />
           <folding>
             <element signature="e#1289#1327#0" expanded="true" />
           </folding>
