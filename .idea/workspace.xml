@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="164e6e46-bda0-4439-950e-b8d9defa4f96" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/deepcell/utils/misc_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepcell/utils/misc_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deepcell/homeapplications/homeMadeModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepcell/homeapplications/homeMadeModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN_3D.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN_3D.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            <state relative-caret-position="50">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="e#94#103#0" expanded="true" />
               </folding>
@@ -29,8 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deepcell/model_zoo/maskrcnn_3D.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="298" selection-start-line="298" selection-end-line="298" />
+            <state relative-caret-position="410">
+              <caret line="292" column="4" selection-start-line="292" selection-start-column="4" selection-end-line="292" selection-end-column="4" />
               <folding>
                 <element signature="e#1326#1364#0" expanded="true" />
               </folding>
@@ -41,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deepcell/utils/misc_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+            <state relative-caret-position="281">
+              <caret line="84" column="34" lean-forward="true" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
               <folding>
                 <element signature="e#1289#1327#0" expanded="true" />
               </folding>
@@ -51,10 +50,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/anaconda3/envs/deepcell/lib/python3.7/site-packages/tensorflow/python/keras/applications/resnet50.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+              <folding>
+                <element signature="e#753#791#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deepcell/homeapplications/homeMadeModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="211" selection-start-line="211" selection-end-line="211" />
+            <state relative-caret-position="180">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="38" />
               <folding>
                 <element signature="e#234#272#0" expanded="true" />
               </folding>
@@ -65,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/envs/deepcell/lib/python3.7/site-packages/keras_applications/resnet50.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="208" column="75" selection-start-line="208" selection-start-column="58" selection-end-line="208" selection-end-column="75" />
+            <state relative-caret-position="450">
+              <caret line="30" column="7" selection-start-line="30" selection-end-line="30" selection-end-column="7" />
               <folding>
                 <element signature="e#180#218#0" expanded="true" />
               </folding>
@@ -77,11 +88,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deepcell/model_zoo/maskrcnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3490">
-              <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+            <state relative-caret-position="-570">
+              <caret line="181" column="11" lean-forward="true" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
               <folding>
                 <element signature="e#1326#1364#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deepcell/model_zoo/resnet_presque_3D.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="12" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -97,8 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>glo</find>
-      <find>glob</find>
       <find>train_model_retinanet</find>
       <find>data_format = 'channels_first'</find>
       <find>channels_first</find>
@@ -127,6 +145,8 @@
       <find>mrcnn_model</find>
       <find>resnet50</find>
       <find>Model</find>
+      <find>image_data_format</find>
+      <find>K</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -149,8 +169,9 @@
         <option value="$PROJECT_DIR$/deepcell/homeapplications/__init__.py" />
         <option value="$PROJECT_DIR$/deepcell/model_zoo/__init__.py" />
         <option value="$PROJECT_DIR$/deepcell/model_zoo/maskrcnn_3D.py" />
-        <option value="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.py" />
         <option value="$PROJECT_DIR$/deepcell/utils/misc_utils.py" />
+        <option value="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.py" />
+        <option value="$PROJECT_DIR$/deepcell/homeapplications/homeMadeModel.py" />
       </list>
     </option>
   </component>
@@ -368,7 +389,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="7" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20242488" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -559,16 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deepcell/model_zoo/resnet_presque_3D.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#132#270#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/misc/interpolation3D.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
@@ -742,60 +754,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deepcell/model_zoo/maskrcnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3490">
-          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
-          <folding>
-            <element signature="e#1326#1364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/deepcell/lib/python3.7/site-packages/tensorflow/python/keras/applications/resnet50.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding>
-            <element signature="e#753#791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deepcell/utils/misc_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="84" column="34" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
-          <folding>
-            <element signature="e#1289#1327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deepcell/homeapplications/homeMadeModel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="211" selection-start-line="211" selection-end-line="211" />
-          <folding>
-            <element signature="e#234#272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deepcell/model_zoo/maskrcnn_3D.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="298" selection-start-line="298" selection-end-line="298" />
-          <folding>
-            <element signature="e#1326#1364#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/deepcell/lib/python3.7/site-packages/keras_applications/resnet50.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="208" column="75" selection-start-line="208" selection-start-column="58" selection-end-line="208" selection-end-column="75" />
+        <state relative-caret-position="450">
+          <caret line="30" column="7" selection-start-line="30" selection-end-line="30" selection-end-column="7" />
           <folding>
             <element signature="e#180#218#0" expanded="true" />
           </folding>
@@ -804,10 +766,67 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        <state relative-caret-position="50">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
           <folding>
             <element signature="e#94#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deepcell/model_zoo/maskrcnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
+          <caret line="181" column="11" lean-forward="true" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
+          <folding>
+            <element signature="e#1326#1364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deepcell/utils/misc_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="84" column="34" lean-forward="true" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+          <folding>
+            <element signature="e#1289#1327#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deepcell/model_zoo/maskrcnn_3D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="292" column="4" selection-start-line="292" selection-start-column="4" selection-end-line="292" selection-end-column="4" />
+          <folding>
+            <element signature="e#1326#1364#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deepcell/model_zoo/resnet_presque_3D.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/deepcell/lib/python3.7/site-packages/tensorflow/python/keras/applications/resnet50.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="27" column="45" selection-start-line="27" selection-start-column="45" selection-end-line="27" selection-end-column="45" />
+          <folding>
+            <element signature="e#753#791#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deepcell/homeapplications/homeMadeModel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="e#234#272#0" expanded="true" />
           </folding>
         </state>
       </provider>
