@@ -34,7 +34,7 @@ import re
 from tensorflow.python.keras import applications
 from tensorflow.python.keras.models import Model
 
-from deepcell.model_zoo import homeMadeModel
+from deepcell import homeapplications
 
 
 def sorted_nicely(l):
@@ -53,7 +53,7 @@ def get_pyramid_layer_outputs(backbone, inputs, **kwargs):
     nasnet_backbones = {'nasnet_large', 'nasnet_mobile'}
 
     ## 3D ADDING
-    resnet_3D_backbones = {'resnet50_3D'}
+    resnet_3D_backbones = {'resnet50_3D', 'resnet50_3D_gne'}
 
     if _backbone in vgg_backbones:
         layer_names = ['block3_pool', 'block4_pool', 'block5_pool']
@@ -88,10 +88,9 @@ def get_pyramid_layer_outputs(backbone, inputs, **kwargs):
         model = Model(inputs=inputs, outputs=layer_outputs, name=model.name)
         return model.outputs
 
-
     ## 3D ADDING
     elif _backbone in resnet_3D_backbones:
-        model = homeMadeModel.resnet50_3D(**kwargs)
+        model = homeapplications.resnet50_3D(**kwargs)
         layer_names = ['res3d_branch2c', 'res4f_branch2c', 'res5c_branch2c']
         layer_outputs = [model.get_layer(name).output for name in layer_names]
         model = Model(inputs=inputs, outputs=layer_outputs, name=model.name)
