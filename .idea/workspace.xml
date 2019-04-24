@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="164e6e46-bda0-4439-950e-b8d9defa4f96" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/deepcell/utils/misc_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/deepcell/utils/misc_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/mrcnn_retinanet/.ipynb_checkpoints/MaskRCNN_3D-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mrcnn_retinanet/.ipynb_checkpoints/MaskRCNN_3D-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN_3D.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/mrcnn_retinanet/MaskRCNN_3D.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,18 +12,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deepcell/utils/misc_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="99" column="76" lean-forward="true" selection-start-line="99" selection-start-column="76" selection-end-line="99" selection-end-column="76" />
-              <folding>
-                <element signature="e#1289#1327#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/anaconda3/envs/deepcell/lib/python3.7/site-packages/tensorflow/python/keras/applications/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -43,6 +28,18 @@
               <caret line="70" column="16" lean-forward="true" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
               <folding>
                 <element signature="e#840#878#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deepcell/utils/misc_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-254">
+              <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
+              <folding>
+                <element signature="e#1289#1327#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,6 +228,12 @@
             <path>
               <item name="deepcell-tf" type="b2602c69:ProjectViewProjectNode" />
               <item name="deepcell-tf" type="462c0819:PsiDirectoryNode" />
+              <item name="deepcell" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="deepcell-tf" type="b2602c69:ProjectViewProjectNode" />
+              <item name="deepcell-tf" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -399,7 +402,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="7" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20242488" />
@@ -777,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/deepcell/lib/python3.7/site-packages/tensorflow/python/keras/applications/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="82" column="63" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/deepcell/lib/python3.7/site-packages/keras_applications/resnet50.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -834,10 +830,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/deepcell/lib/python3.7/site-packages/tensorflow/python/keras/applications/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="82" column="63" selection-start-line="82" selection-start-column="58" selection-end-line="82" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/deepcell/utils/misc_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="99" column="76" lean-forward="true" selection-start-line="99" selection-start-column="76" selection-end-line="99" selection-end-column="76" />
+        <state relative-caret-position="-254">
+          <caret line="56" column="4" selection-start-line="56" selection-start-column="4" selection-end-line="56" selection-end-column="4" />
           <folding>
             <element signature="e#1289#1327#0" expanded="true" />
           </folding>
