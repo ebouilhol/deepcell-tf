@@ -123,6 +123,6 @@ def get_pyramid_layer_outputs(backbone, inputs, **kwargs):
         return model.outputs
 
     else:
-        backbones = list(densenet_backbones + resnet_backbones + vgg_backbones)
+        backbones = list(densenet_backbones + resnet_backbones + vgg_backbones + resnet_3D_backbones)
         raise ValueError('Invalid value for `backbone`. Must be one of: %s' %
                          ', '.join(backbones))
