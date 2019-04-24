@@ -21,6 +21,10 @@ from keras_applications import get_submodules_from_kwargs
 from keras_applications import imagenet_utils
 from keras_applications.imagenet_utils import decode_predictions
 from keras_applications.imagenet_utils import _obtain_input_shape
+import keras.backend as K
+K.set_image_data_format('channels_last')
+K.set_learning_phase(1)
+
 
 preprocess_input = imagenet_utils.preprocess_input
 
