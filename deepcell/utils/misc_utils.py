@@ -53,7 +53,7 @@ def get_pyramid_layer_outputs(backbone, inputs, **kwargs):
     nasnet_backbones = {'nasnet_large', 'nasnet_mobile'}
 
     ## 3D ADDING
-    resnet_3D_backbones = {'resnet50_3D', 'resnet50_3D_gne'}
+    resnet_3D_backbones = {'resnet50_3d', 'resnet50_3D_gne'}
     print(resnet_3D_backbones)
 
     if _backbone in vgg_backbones:
