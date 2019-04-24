@@ -91,7 +91,7 @@ num_classes = 1  # "object" is the only class
 
 from deepcell import model_zoo
 
-model = model_zoo.MaskRCNN_3D(
+model = model_zoo.MaskRCNN(
     backbone=backbone,
     input_shape=(1),
     class_specific_filter=False,
