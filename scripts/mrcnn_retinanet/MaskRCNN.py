@@ -31,12 +31,12 @@ filename = 'HeLa_S3.npz'
 # the path to the data file is currently required for `train_model_()` functions
 
 # NOTE: Change DATA_DIR if you are not using `deepcell.datasets`
-DATA_DIR = os.path.expanduser(os.path.join('~', '.keras', 'datasets'))
-
-DATA_FILE = os.path.join(DATA_DIR, filename)
-
-# confirm the data file is available
-assert os.path.isfile(DATA_FILE)
+# DATA_DIR = os.path.expanduser(os.path.join('~', '.keras', 'datasets'))
+#
+# DATA_FILE = os.path.join(DATA_DIR, filename)
+#
+# # confirm the data file is available
+# assert os.path.isfile(DATA_FILE)
 
 
 # In[4]:
@@ -68,8 +68,8 @@ assert os.path.isfile(DATA_FILE)
 from tensorflow.keras.optimizers import SGD, Adam
 from deepcell.utils.train_utils import rate_scheduler
 
-model_name = 'mrcnn_model'
-backbone = 'resnet50'  # vgg16, vgg19, resnet50, densenet121, densenet169, densenet201
+model_name = 'mrcnn_model_3D'
+backbone = 'resnet50_3d'  # vgg16, vgg19, resnet50, densenet121, densenet169, densenet201
 
 n_epoch = 3  # Number of training epochs
 test_size = .10  # % of data saved as test
@@ -91,9 +91,9 @@ num_classes = 1  # "object" is the only class
 
 from deepcell import model_zoo
 
-model = model_zoo.MaskRCNN(
+model = model_zoo.MaskRCNN_3D(
     backbone=backbone,
-    input_shape=(1),
+    input_shape=(120, 256, 256, 1),
     class_specific_filter=False,
     num_classes=num_classes)
 

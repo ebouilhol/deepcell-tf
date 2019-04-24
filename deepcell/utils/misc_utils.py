@@ -54,7 +54,7 @@ def get_pyramid_layer_outputs(backbone, inputs, **kwargs):
 
     ## 3D ADDING
     resnet_3D_backbones = {'resnet50_3d', 'resnet50_3D_gne'}
-    
+
     if _backbone in vgg_backbones:
         layer_names = ['block3_pool', 'block4_pool', 'block5_pool']
         if _backbone == 'vgg16':
@@ -90,7 +90,7 @@ def get_pyramid_layer_outputs(backbone, inputs, **kwargs):
 
     ## 3D ADDING
     elif _backbone in resnet_3D_backbones:
-        model = homeapplications.resnet50_3D(**kwargs)
+        model = homeapplications.ResNet50_3D(**kwargs)
         layer_names = ['res3d_branch2c', 'res4f_branch2c', 'res5c_branch2c']
         layer_outputs = [model.get_layer(name).output for name in layer_names]
         model = Model(inputs=inputs, outputs=layer_outputs, name=model.name)
