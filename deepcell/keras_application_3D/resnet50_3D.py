@@ -21,9 +21,8 @@ from keras_applications import get_submodules_from_kwargs
 from keras_applications import imagenet_utils
 from keras_applications.imagenet_utils import decode_predictions
 from keras_applications.imagenet_utils import _obtain_input_shape
-import keras.backend as K
-K.set_image_data_format('channels_last')
-K.set_learning_phase(1)
+from tensorflow.python.keras import backend
+
 
 
 preprocess_input = imagenet_utils.preprocess_input
@@ -39,6 +38,7 @@ backend = None
 layers = None
 models = None
 keras_utils = None
+
 
 
 def identity_block(input_tensor, kernel_size, filters, stage, block):
@@ -182,7 +182,7 @@ def ResNet50_3D(include_top=True,
             - `avg` means that global average pooling
                 will be applied to the output of the
                 last convolutional block, and thus
-                the output of the model will be a 2D tensor.
+                the output of the model will be a 3D tensor.
             - `max` means that global max pooling will
                 be applied.
         classes: optional number of classes to classify images
@@ -198,6 +198,7 @@ def ResNet50_3D(include_top=True,
     """
     global backend, layers, models, keras_utils
     backend, layers, models, keras_utils = get_submodules_from_kwargs(kwargs)
+    print(backend)
 
     if not (weights in {'imagenet', None} or os.path.exists(weights)):
         raise ValueError('The `weights` argument should be either '
@@ -230,7 +231,7 @@ def ResNet50_3D(include_top=True,
         bn_axis = 1
 
     x = layers.ZeroPadding3D(padding=(3, 3, 3), name='conv1_pad')(img_input)
-    x = layers.Conv2D(64, (7, 7, 7),
+    x = layers.Conv3D(64, (7, 7, 7),
                       strides=(2, 2, 2),
                       padding='valid',
                       kernel_initializer='he_normal',

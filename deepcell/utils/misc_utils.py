@@ -29,12 +29,11 @@ from __future__ import absolute_import
 from __future__ import print_function
 from __future__ import division
 
-import re
 
 from tensorflow.python.keras import applications
 from tensorflow.python.keras.models import Model
 
-from deepcell import homeapplications
+from deepcell import application_3D, keras_application_3D
 
 
 def sorted_nicely(l):
@@ -83,6 +82,8 @@ def get_pyramid_layer_outputs(backbone, inputs, **kwargs):
 
     elif _backbone in resnet_backbones:
         model = applications.ResNet50(**kwargs)
+        for i in kwargs:
+            print(i, kwargs[i])
         layer_names = ['res3d_branch2c', 'res4f_branch2c', 'res5c_branch2c']
         layer_outputs = [model.get_layer(name).output for name in layer_names]
         model = Model(inputs=inputs, outputs=layer_outputs, name=model.name)
@@ -90,7 +91,10 @@ def get_pyramid_layer_outputs(backbone, inputs, **kwargs):
 
     ## 3D ADDING
     elif _backbone in resnet_3D_backbones:
-        model = homeapplications.ResNet50_3D(**kwargs)
+        for i in kwargs:
+            print(i, kwargs[i])
+        model = application_3D.ResNet50_3D(**kwargs)
+
         layer_names = ['res3d_branch2c', 'res4f_branch2c', 'res5c_branch2c']
         layer_outputs = [model.get_layer(name).output for name in layer_names]
         model = Model(inputs=inputs, outputs=layer_outputs, name=model.name)

@@ -20,6 +20,7 @@ from __future__ import division
 from __future__ import print_function
 
 import keras_applications
+import deepcell.keras_application_3D
 
 from tensorflow.python.keras import backend
 from tensorflow.python.keras import engine
@@ -70,8 +71,8 @@ def keras_modules_injection(base_fun):
     return base_fun(*args, **kwargs)
   return wrapper
 
+from deepcell.application_3D.resnet50_3D import ResNet50_3D
 
-from .homeMadeModel import ResNet50_3D
 
 del absolute_import
 del division

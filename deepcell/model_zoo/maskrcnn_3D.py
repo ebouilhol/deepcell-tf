@@ -33,25 +33,26 @@ from tensorflow.python.keras import backend as K
 from tensorflow.python.keras.layers import Input
 from tensorflow.python.keras.layers import TimeDistributed, Conv2D, Conv3D
 from tensorflow.python.keras.models import Model
+import tensorflow as tf
 try:
     from tensorflow.python.keras.initializers import normal
 except ImportError:  # tf 1.8.0 uses keras._impl directory
     from tensorflow.python.keras._impl.keras.initializers import normal
 
 from deepcell.layers import Cast, Shape
-from deepcell.layers import Upsample, RoiAlign, ConcatenateBoxes
+from deepcell.layers import Upsample, RoiAlign, ConcatenateBoxes, Upsample3D
 from deepcell.layers import ClipBoxes, RegressBoxes, FilterDetections
-from deepcell.layers import TensorProduct, ImageNormalization2D, ImageNormalization3D
-from deepcell.model_zoo.retinanet import retinanet, __build_anchors
+from deepcell.layers import TensorProduct, ImageNormalization3D
+from deepcell.model_zoo.retinanet_3D import retinanet, __build_anchors
 from deepcell.utils.retinanet_anchor_utils import AnchorParameters
 from deepcell.utils.misc_utils import get_pyramid_layer_outputs
 
 
-def default_mask_model(num_classes,
+def default_mask_model_3D(num_classes,
                        pyramid_feature_size=256,
                        mask_feature_size=256,
-                       roi_size=(14, 14, 15),
-                       mask_size=(28, 28, 15),
+                       roi_size=(14, 14, 14),
+                       mask_size=(28, 28, 28),
                        name='mask_submodel',
                        mask_dtype=K.floatx(),
                        retinanet_dtype=K.floatx()):
@@ -98,9 +99,11 @@ def default_mask_model(num_classes,
 
     # perform upsampling + conv instead of deconv as in the paper
     # https://distill.pub/2016/deconv-checkerboard/
+
     outputs = TimeDistributed(
-        Upsample(mask_size),
+        Upsample3D(mask_size),
         name='roi_mask_upsample')(outputs)
+
     outputs = TimeDistributed(Conv3D(
         filters=mask_feature_size,
         **options
@@ -122,8 +125,8 @@ def default_mask_model(num_classes,
 
 
 def default_roi_submodels(num_classes,
-                          roi_size=(14, 14, 15),
-                          mask_size=(28, 28, 15),
+                          roi_size=(14, 14, 14),
+                          mask_size=(28, 28, 28),
                           mask_dtype=K.floatx(),
                           retinanet_dtype=K.floatx()):
     """Create a list of default roi submodels.
@@ -140,7 +143,7 @@ def default_roi_submodels(num_classes,
         and the second element is the submodel itself.
     """
     return [
-        ('masks', default_mask_model(num_classes,
+        ('masks', default_mask_model_3D(num_classes,
                                      roi_size=roi_size,
                                      mask_size=mask_size,
                                      mask_dtype=mask_dtype,
@@ -154,9 +157,9 @@ def retinanet_mask_3D(inputs,
                    anchor_params=None,
                    nms=True,
                    class_specific_filter=True,
-                   crop_size=(14, 14, 1),
-                   mask_size=(28, 28, 15),
-                   name='retinanet-mask',
+                   crop_size=(14, 14),
+                   mask_size=(28, 28, 28),
+                   name='retinanet-mask-3D',
                    roi_submodels=None,
                    mask_dtype=K.floatx(),
                    **kwargs):
@@ -254,7 +257,7 @@ def MaskRCNN_3D(backbone,
              num_classes,
              input_shape,
              norm_method='whole_image',
-             crop_size=(14, 14, 15),
+             crop_size=(14, 14, 14),
              weights=None,
              pooling=None,
              mask_dtype=K.floatx(),
@@ -305,6 +308,6 @@ def MaskRCNN_3D(backbone,
         inputs=inputs,
         num_classes=num_classes,
         crop_size=crop_size,
-        name='{}_retinanet_mask'.format(backbone),
+        name='{}_retinanet_mask_3D'.format(backbone),
         mask_dtype=mask_dtype,
         **kwargs)

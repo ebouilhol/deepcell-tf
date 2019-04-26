@@ -69,7 +69,7 @@ from tensorflow.keras.optimizers import SGD, Adam
 from deepcell.utils.train_utils import rate_scheduler
 
 model_name = 'mrcnn_model_3D'
-backbone = 'resnet50_3d'  # vgg16, vgg19, resnet50, densenet121, densenet169, densenet201
+  # vgg16, vgg19, resnet50, densenet121, densenet169, densenet201
 
 n_epoch = 3  # Number of training epochs
 test_size = .10  # % of data saved as test
@@ -90,10 +90,18 @@ num_classes = 1  # "object" is the only class
 
 
 from deepcell import model_zoo
+#
+# backbone = 'resnet50'
+# model = model_zoo.MaskRCNN(
+#     backbone=backbone,
+#     input_shape=(1, 256, 256),
+#     class_specific_filter=False,
+#     num_classes=num_classes)
 
-model = model_zoo.MaskRCNN(
+backbone = 'resnet50_3D'
+model = model_zoo.MaskRCNN_3D(
     backbone=backbone,
-    input_shape=(120, 256, 256, 1),
+    input_shape=(12, 256, 256, 1),
     class_specific_filter=False,
     num_classes=num_classes)
 
